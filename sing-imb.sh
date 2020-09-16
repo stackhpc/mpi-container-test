@@ -10,5 +10,8 @@ module load gcc/9.3.0-5abm3xg
 module load openmpi/4.0.3-qpsxmnc
 export UCX_NET_DEVICES=mlx5_0:1 # host MPI - uses UCX
 export OMPI_MCA_btl_openib_if_include=mlx5_0:1 # guest MPI - uses openib btl
+echo "Nodes:", $SLURM_JOB_NODELIST
 
 mpirun /alaska/steveb/opt/singularity-dev/bin/singularity exec mpi-benchmarks.sif IMB-MPI1 pingpong
+
+echo "Results: " $(python imb-stats.py sing-imb.out)
