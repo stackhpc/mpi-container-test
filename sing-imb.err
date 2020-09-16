@@ -8,5 +8,5 @@ support) will be disabled for this port.
   Local port:           1
   CPCs attempted:       rdmacm, udcm
 --------------------------------------------------------------------------
-[openhpc-compute-0:16888] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
-[openhpc-compute-0:16888] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[openhpc-compute-0:22362] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[openhpc-compute-0:22362] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
