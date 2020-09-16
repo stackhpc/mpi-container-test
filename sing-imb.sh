@@ -11,4 +11,4 @@ module load openmpi3/3.1.0
 export SLURM_MPI_TYPE=pmix_v2
 export UCX_NET_DEVICES=mlx5_0:1
 
-srun /alaska/steveb/opt/singularity-dev/bin/singularity exec mpi-benchmarks.sif IMB-MPI1 pingpong
+mpirun /alaska/steveb/opt/singularity-dev/bin/singularity exec mpi-benchmarks.sif IMB-MPI1 pingpong
