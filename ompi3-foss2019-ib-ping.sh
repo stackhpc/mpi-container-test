@@ -11,7 +11,7 @@ module load gnu7/7.3.0 # openhpc package
 module load openmpi3/3.1.0 # # openhpc package, uses btl
 export OMPI_MCA_btl_openib_if_include=mlx5_0:1
 echo "Nodes:", $SLURM_JOB_NODELIST
-module load imb/2018.1 # openhpc package
-mpirun IMB-MPI1 pingpong
+
+mpirun /alaska/steveb/opt/singularity-dev/bin/singularity exec mpi-benchmarks.sif IMB-MPI1 pingpong
 
 echo "Results: " $(python imb-stats.py $SLURM_JOB_NAME.out)

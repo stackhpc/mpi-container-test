@@ -66,7 +66,7 @@ where:
 - NA = no container
 
 status:
-- ompi3-NA-ib-ping.sh: QUEUED
-- ompi4-NA-ib-ping.sh: 
-- ompi3-foss2019-ib-ping.sh: 
-- ompi4-foss2019-ib-ping.sh: 
+- ompi3-NA-ib-ping.sh:Results:  1.1 us 11942.17 MB/s
+- ompi4-NA-ib-ping.sh:Results:  0.84 us 11943.91 MB/s
+- ompi3-foss2019-ib-ping.sh:Results:  1.1 us 11942.59 MB/s
+- ompi4-foss2019-ib-ping.sh:Results:  1.1 us 11940.07 MB/s
