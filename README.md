@@ -53,19 +53,23 @@ singularity-dev build --fakeroot mpi-benchmarks.sif Singularity.mpi-benchmarks
 
 # Testing compatibility
 
-## Incomplete Notes
-
-Name format for `*.sh`,`*.out` & `*.err` files:
+This section shows the results of testing various MPI combinations. The name format for `*.sh`,`*.out` & `*.err` files is:
 
     <hostmpi>-<containermpi>-<network>-<test>
 
-where:
-- ompi3 = openmpi3 + btl (openhpc package)
-- ompi4 = openmpi4 + UCX (spack package)
-- foss2019 = (EB package, which ompi version)
-- NA = no container
+where the host mpis are:
+- `ompi3`: openmpi3 + BTL (OpenHPC package)
+- `ompi4`: openmpi4 + UCX (installed using Spack)
 
-status:
+And the container mpis are:
+- `NA` = no container
+- `foss2019` = openmpi3.1.3
+
+Note that network selection depends on whether openmpi is using BTL or UCX, hence the appropriate environment variables must be set on the host and container.
+
+## Results
+The IMB pingpong test was run with default options for each of the above cases, and the zero-message-size latency and maximum bandwidth extracted:
+
 - ompi3-NA-ib-ping.sh:Results:  1.1 us 11942.17 MB/s
 - ompi4-NA-ib-ping.sh:Results:  0.84 us 11943.91 MB/s
 - ompi3-foss2019-ib-ping.sh:Results:  1.1 us 11942.59 MB/s
