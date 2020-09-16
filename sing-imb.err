@@ -1,0 +1,26 @@
+[openhpc-compute-1:34827] PMIX ERROR: ERROR in file gds_dstore.c at line 1244
+[openhpc-compute-1:34827] PMIX ERROR: OUT-OF-RESOURCE in file gds_dstore.c at line 1017
+[openhpc-compute-1:34827] PMIX ERROR: OUT-OF-RESOURCE in file gds_dstore.c at line 2234
+[openhpc-compute-0:08071] PMIX ERROR: ERROR in file gds_dstore.c at line 1244
+[openhpc-compute-0:08071] PMIX ERROR: OUT-OF-RESOURCE in file gds_dstore.c at line 1017
+[openhpc-compute-0:08071] PMIX ERROR: OUT-OF-RESOURCE in file gds_dstore.c at line 2234
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           openhpc-compute-1
+  Local device:         mlx5_1
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           openhpc-compute-0
+  Local device:         mlx5_1
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
