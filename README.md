@@ -68,7 +68,9 @@ And the container mpis are:
 Note that network selection depends on whether openmpi is using BTL or UCX, hence the appropriate environment variables must be set on the host and container.
 
 ## Results
-The IMB pingpong test was run with default options for each of the above cases, and the zero-message-size latency and maximum bandwidth extracted:
+The IMB pingpong test was run with default options for each of the above cases, and the zero-message-size latency and maximum bandwidth extracted.
+
+Note that all tests were run on the same two nodes to give comparable latencies.
 
 - ompi3-NA-ib-ping.sh:Results:  1.1 us 11942.17 MB/s
 - ompi4-NA-ib-ping.sh:Results:  0.84 us 11943.91 MB/s
